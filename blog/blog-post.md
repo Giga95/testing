@@ -1,5 +1,6 @@
 ---
 title: My First Article
+author: Jhon Smith
 tags: ["post"]
 tag: Career
 image: /img/blog-post0.jpg

@@ -16,5 +16,20 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Tag", name: "tag", widget: "string" }
+      - { label: "Blog type", name: "tag", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+- name: "job"
+    label: "Job Post"
+    folder: "/career"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Job category", name: "jobTag", widget: "select", options: ["ui", "ux", "development", "consultant", "project-engineering", "project-management", "qa", "video-editing", "other"] }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
+      - { label: "Tags", name: "tag", widget: "string" }
+      - { label: "Job Type", name: "jobType", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
