@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/queries.css" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     {% include "header.njk" %}
@@ -24,6 +25,16 @@
     {% include "footer.njk" %}
     {% include "home-script.njk" %}
         <script src="/js/custom.js"></script>
-
+        <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+        </script>
 </body>
 </html>
