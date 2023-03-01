@@ -43,7 +43,7 @@ collections:
               "other",
             ],
         }
-      - { label: "Image caption", name: "imageAlt", widget: "string" }
-      - { label: "Tags", name: "tag", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Job tag", name: "tag", widget: "string" }
       - { label: "Job Type", name: "jobType", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
