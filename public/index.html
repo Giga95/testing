@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/queries.css" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <header class="header container">
@@ -299,7 +300,7 @@
     </main>
     
    
-    <footer class="footer reveal fade-bottom">
+    <footer class="footer">
       <div class="follow-us">
         <h3 class="follow-us-text">Follow us on</h3>
         <a href="https://www.linkedin.com/company/duos-asinos-consulting/mycompany/" target="_blank"><img src="/img/icons/linkedin-logo.png" alt=""></a>
@@ -340,6 +341,16 @@
     </script>
 
         <script src="/js/custom.js"></script>
-
+        <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+        </script>
 </body>
 </html>

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/queries.css" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <header class="header container">
@@ -69,6 +70,35 @@
             
             <div class="posts"><div class="all career-category">
                 <div class="post-box">
+                  <a href="/blog/new-article/" target="_blank">
+                    <div class="post-img">
+                      <img src="/img/blog-post0.jpg" alt="This is a test" />
+                    </div>
+                  </a>
+                  
+                  <div class="post-content">
+                    <a href="/blog/new-article/" target="_blank">
+                      <h2>New</h2>
+                    </a>
+                    
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
+                    
+
+                  </div>
+
+                  <div class="blog-info">
+                    <p>Career</p>
+                    <a
+                      href="/blog/new-article/"
+                      target="_blank"
+                      type="button"
+                      class="read-btn"
+                      >Read more</a>
+                    
+                  </div>
+                </div>
+              </div><div class="all career-category">
+                <div class="post-box">
                   <a href="/blog/blog-post/" target="_blank">
                     <div class="post-img">
                       <img src="/img/blog-post0.jpg" alt="This is a test" />
@@ -98,26 +128,26 @@
                 </div>
               </div><div class="all career-category">
                 <div class="post-box">
-                  <a href="/blog/new-article/" target="_blank">
+                  <a href="/blog/asdasdasd/" target="_blank">
                     <div class="post-img">
-                      <img src="/img/blog-post0.jpg" alt="This is a test" />
+                      <img src="/img/blog-heading.jpg" alt="asdasd" />
                     </div>
                   </a>
                   
                   <div class="post-content">
-                    <a href="/blog/new-article/" target="_blank">
-                      <h2>New</h2>
+                    <a href="/blog/asdasdasd/" target="_blank">
+                      <h2>ASdasdasd</h2>
                     </a>
                     
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
+                      <p>asdasd</p>
                     
 
                   </div>
 
                   <div class="blog-info">
-                    <p>Career</p>
+                    <p>adasdasd</p>
                     <a
-                      href="/blog/new-article/"
+                      href="/blog/asdasdasd/"
                       target="_blank"
                       type="button"
                       class="read-btn"
@@ -125,8 +155,7 @@
                     
                   </div>
                 </div>
-              </div>
-            </div>
+              </div></div>
           </div>
         </div>
       </section>
@@ -134,7 +163,7 @@
 <script src="/js/category-filter.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-    <footer class="footer reveal fade-bottom">
+    <footer class="footer">
       <div class="follow-us">
         <h3 class="follow-us-text">Follow us on</h3>
         <a href="https://www.linkedin.com/company/duos-asinos-consulting/mycompany/" target="_blank"><img src="/img/icons/linkedin-logo.png" alt=""></a>
@@ -175,6 +204,16 @@
     </script>
 
         <script src="/js/custom.js"></script>
-
+        <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+        </script>
 </body>
 </html>

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/queries.css" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <header class="header container">
@@ -265,7 +266,7 @@
             <div class="filter-cards-list">
               <ul id="results-list"><li class="ui ux">
                   <div class="filter-card">
-                    <h4>Graphic Designer</h4>
+                    <h4>Graphic Designer test</h4>
                     <p class="skills-list">AI, AE, PS, VD</p>
                     <p class="job-short-desc">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
@@ -273,24 +274,7 @@
                     <div class="see-job">
                       <p>Full time job</p>
                       <a
-                        href="/career/graphic/"
-                        class="read-btn"
-                        target="_blank"
-                        >Learn more</a
-                      >
-                    </div>
-                  </div>
-                </li><li class="project-management">
-                  <div class="filter-card">
-                    <h4>Senior Project manager</h4>
-                    <p class="skills-list">Word, Excel, other tools</p>
-                    <p class="job-short-desc">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
-                    </p>
-                    <div class="see-job">
-                      <p>Full time job</p>
-                      <a
-                        href="/career/projectmanager/"
+                        href="/career/asdasdsssss/"
                         class="read-btn"
                         target="_blank"
                         >Learn more</a
@@ -308,6 +292,57 @@
                       <p>Full time job</p>
                       <a
                         href="/career/consultant/"
+                        class="read-btn"
+                        target="_blank"
+                        >Learn more</a
+                      >
+                    </div>
+                  </div>
+                </li><li class="ui ux">
+                  <div class="filter-card">
+                    <h4>Graphic Designer</h4>
+                    <p class="skills-list">AI, AE, PS, VD</p>
+                    <p class="job-short-desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
+                    </p>
+                    <div class="see-job">
+                      <p>Full time job</p>
+                      <a
+                        href="/career/graphic/"
+                        class="read-btn"
+                        target="_blank"
+                        >Learn more</a
+                      >
+                    </div>
+                  </div>
+                </li><li class="project-management">
+                  <div class="filter-card">
+                    <h4>Posao</h4>
+                    <p class="skills-list">Tag UI, UX, DEV</p>
+                    <p class="job-short-desc">
+                      opis posla
+                    </p>
+                    <div class="see-job">
+                      <p>Freelance</p>
+                      <a
+                        href="/career/posao/"
+                        class="read-btn"
+                        target="_blank"
+                        >Learn more</a
+                      >
+                    </div>
+                  </div>
+                </li><li class="project-management">
+                  <div class="filter-card">
+                    <h4>Senior Project manager</h4>
+                    <p class="skills-list">Word, Excel, other tools</p>
+                    <p class="job-short-desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
+                    </p>
+                    <div class="see-job">
+                      <p>Full time job</p>
+                      <a
+                        href="/career/projectmanager/"
                         class="read-btn"
                         target="_blank"
                         >Learn more</a
@@ -348,17 +383,17 @@
                       >
                     </div>
                   </div>
-                </li><li class="ui ux">
+                </li><li class="development">
                   <div class="filter-card">
-                    <h4>Graphic Designer test</h4>
-                    <p class="skills-list">AI, AE, PS, VD</p>
+                    <h4>Senior developer</h4>
+                    <p class="skills-list">sad</p>
                     <p class="job-short-desc">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
+                      asd;alksd
                     </p>
                     <div class="see-job">
-                      <p>Full time job</p>
+                      <p>freeeeee</p>
                       <a
-                        href="/career/asdasdsssss/"
+                        href="/career/senior-developer/"
                         class="read-btn"
                         target="_blank"
                         >Learn more</a
@@ -458,7 +493,7 @@
     <script src="/js/fileupload.js"></script>
 
 
-    <footer class="footer reveal fade-bottom">
+    <footer class="footer">
       <div class="follow-us">
         <h3 class="follow-us-text">Follow us on</h3>
         <a href="https://www.linkedin.com/company/duos-asinos-consulting/mycompany/" target="_blank"><img src="/img/icons/linkedin-logo.png" alt=""></a>
@@ -499,6 +534,16 @@
     </script>
 
         <script src="/js/custom.js"></script>
-
+        <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+        </script>
 </body>
 </html>
